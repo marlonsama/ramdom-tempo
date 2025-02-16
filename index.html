@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador de Treino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temporizador de Treino</h1>
+        
+        <!-- Campo para o usuário inserir o tempo desejado -->
+        <p>Tempo de treino (minutos):</p>
+        <input type="number" id="tempoInput" value="20" min="1" class="input-tempo">
+        
+        <!-- Exibição do tempo visível -->
+        <p id="tempo" class="timer">20:00</p>
+
+        <div class="buttons">
+            <button id="iniciar" class="btn">Iniciar</button>
+            <button id="pausar" class="btn" disabled>Pausar</button>
+            <button id="encerrar" class="btn" disabled>Encerrar</button>
+        </div>
+    </div>
+    
+    <!-- Áudio do alarme -->
+    <audio id="alarme" src="alarme.mp3" preload="auto"></audio>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
